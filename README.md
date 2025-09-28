@@ -1,22 +1,22 @@
 # PhishGuard AI - AI-Powered Phishing Detection Browser Extension
 
-[cite\_start]PhishGuard AI is an advanced browser extension designed to actively detect and block phishing websites in real-time. [cite: 1] [cite\_start]It provides a robust security layer for users by integrating multiple detection mechanisms, including AI-based URL analysis, domain reputation checks, and SSL verification. [cite: 55, 122]
+PhishGuard AI is an advanced browser extension designed to actively detect and block phishing websites in real-time. It provides a robust security layer for users by integrating multiple detection mechanisms, including AI-based URL analysis, domain reputation checks, and SSL verification. 
 
 ## ✨ Key Features
 
   * **Multi-Layered Protection:** Employs a three-pronged approach for high-accuracy threat detection:
-      * [cite\_start]**AI-Powered URL Analysis:** Utilizes the Gemini API to analyze URLs for sophisticated phishing patterns and zero-day threats. [cite: 56, 128]
-      * [cite\_start]**Domain Reputation Checks:** Integrates with the APIVoid API to check URLs against known blacklists of malicious domains. [cite: 56, 188]
-      * [cite\_start]**SSL Certificate Verification:** Ensures websites are using secure HTTPS connections and flags sites with invalid SSL certificates. [cite: 55, 182]
-  * [cite\_start]**Real-Time Monitoring:** The extension's background service worker actively monitors URLs as you browse, analyzing them in real-time without impacting performance. [cite: 56, 136]
-  * [cite\_start]**Intuitive User Interface:** A clean and simple popup allows users to view their protection status, report suspicious sites, and manage a personal allowlist. [cite: 57, 135]
-  * [cite\_start]**Clear Warning & Blocking:** When a threat is detected, the user is redirected to a clear, informative blocked page detailing the URL and the specific reasons for the block. [cite: 57, 200]
-  * [cite\_start]**User-Managed Allowlist:** Provides full control to the user (or an administrator/parent) to add, view, and remove trusted domains from an allowlist, bypassing the scanner for those sites. [cite: 57, 135]
-  * [cite\_start]**Low Performance Overhead:** Designed to be lightweight, with an average URL check time of under 500ms and minimal CPU and memory usage. [cite: 174, 206]
+      * **AI-Powered URL Analysis:** Utilizes the Gemini API to analyze URLs for sophisticated phishing patterns and zero-day threats. 
+      * **Domain Reputation Checks:** Integrates with the APIVoid API to check URLs against known blacklists of malicious domains. 
+      * **SSL Certificate Verification:** Ensures websites are using secure HTTPS connections and flags sites with invalid SSL certificates. 
+  * **Real-Time Monitoring:** The extension's background service worker actively monitors URLs as you browse, analyzing them in real-time without impacting performance. 
+  * **Intuitive User Interface:** A clean and simple popup allows users to view their protection status, report suspicious sites, and manage a personal allowlist. 
+  * **Clear Warning & Blocking:** When a threat is detected, the user is redirected to a clear, informative blocked page detailing the URL and the specific reasons for the block. 
+  * **User-Managed Allowlist:** Provides full control to the user (or an administrator/parent) to add, view, and remove trusted domains from an allowlist, bypassing the scanner for those sites. 
+  * **Low Performance Overhead:** Designed to be lightweight, with an average URL check time of under 500ms and minimal CPU and memory usage. 
 
 ## 🚀 How It Works
 
-[cite\_start]The extension operates on a modular architecture built on Chrome's Manifest V3 framework. [cite: 127, 186]
+The extension operates on a modular architecture built on Chrome's Manifest V3 framework. 
 
 1.  **URL Interception:** The `background.js` service worker listens for tab updates and intercepts new URLs as they are loading.
 2.  **Allowlist Check:** It first checks if the domain is on the user's allowlist. If so, the analysis is skipped.
@@ -29,21 +29,20 @@
 
 ## 🛠️ Tech Stack
 
-  * [cite\_start]**Framework:** Chrome Extension Manifest V3 [cite: 127]
-  * [cite\_start]**Core Logic:** JavaScript [cite: 198]
+  * **Framework:** Chrome Extension Manifest V3 
+  * **Core Logic:** JavaScript 
   * **APIs:**
-      * [cite\_start]Google Gemini API for AI-based analysis [cite: 56, 167]
-      * [cite\_start]APIVoid API for domain blacklist reputation [cite: 56, 167]
+      * Google Gemini API for AI-based analysis 
+      * APIVoid API for domain blacklist reputation 
       * Chrome Extension API (`tabs`, `storage`, `notifications`, `webRequest`)
   * **Frontend:** HTML5 & CSS3
 
 ## 📸 Screenshots
 
 **Popup Interface**
-[cite\_start]*The popup allows users to report sites and manage their allowlist.* [cite: 190, 243]
-
+*The popup allows users to report sites and manage their allowlist.* 
 **Blocked Page**
-[cite\_start]*A clear warning page is displayed when a phishing attempt is detected, showing the URL and the reasons.* [cite: 190, 243]
+*A clear warning page is displayed when a phishing attempt is detected, showing the URL and the reasons.* 
 
 ## ⚙️ Installation and Setup
 
@@ -86,22 +85,22 @@ PhishGuard-AI/
 
 ## ⚠️ Limitations
 
-  * [cite\_start]**API Dependency:** The extension's functionality relies on external APIs (Google Gemini and APIVoid). [cite: 225]
-  * [cite\_start]**Browser Specific:** Currently developed and tested for Google Chrome and Chromium-based browsers only. [cite: 225]
-  * [cite\_start]**Potential False Positives:** While highly accurate, the AI analysis may occasionally produce false positives. [cite: 225]
+  * **API Dependency:** The extension's functionality relies on external APIs (Google Gemini and APIVoid). 
+  * **Browser Specific:** Currently developed and tested for Google Chrome and Chromium-based browsers only. 
+  * **Potential False Positives:** While highly accurate, the AI analysis may occasionally produce false positives. 
 
 ## 🔮 Future Enhancements
 
-  * [cite\_start]**Cross-Browser Support:** Adapt the extension to work with other browsers like Firefox and Edge. [cite: 227]
-  * [cite\_start]**Local AI Models:** Explore the use of local, on-device AI models to reduce dependency on external APIs and improve privacy. [cite: 227]
-  * [cite\_start]**Advanced Heuristics:** Implement additional heuristic checks to further improve the detection of zero-day phishing attacks. [cite: 227]
+  * **Cross-Browser Support:** Adapt the extension to work with other browsers like Firefox and Edge.
+  * **Local AI Models:** Explore the use of local, on-device AI models to reduce dependency on external APIs and improve privacy. 
+  * **Advanced Heuristics:** Implement additional heuristic checks to further improve the detection of zero-day phishing attacks. 
 
 ## 👨‍💻 Authors
 
 This project was developed by:
 
-  * [cite\_start]Tejas Paithankar (24BCY10104) [cite: 4]
-  * [cite\_start]Aashish Kumar Singh (24BCY10182) [cite: 4]
-  * [cite\_start]Sudhanshu Singh (24BCY10410) [cite: 4]
-  * [cite\_start]Niyati Agarwal (24BCY10293) [cite: 4]
-  * [cite\_start]Ashwin C (24BCY10218) [cite: 4]
+  * Tejas Santosh Paithankar (24BCY10104) 
+  * Ashwin C (24BCY10218)
+  * Sudhanshu Singh (24BCY10410)
+  * Aashish Kumar Singh (24BCY10182) 
+  * Niyati Agarwal (24BCY10293)  
