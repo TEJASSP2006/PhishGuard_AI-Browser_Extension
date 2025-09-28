@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Site Blocked</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blocked-container">
+        <div class="blocked-header">
+            <img src="icons/icon128.png" alt="PhishGuard AI Icon">
+            <h1>Phishing Attempt Blocked</h1>
+        </div>
+        <div class="blocked-content">
+            <p>PhishGuard AI has blocked access to the following URL:</p>
+            <p class="blocked-url" id="blocked-url"></p>
+            <p>This site was blocked for the following reasons:</p>
+            <ul id="reasons-list"></ul>
+            <p>We strongly recommend you do not proceed.</p>
+        </div>
+        <div class="blocked-actions">
+            <button id="go-back" class="action-btn">Go Back to Safety</button>
+            <button id="proceed" class="action-btn report">Proceed Anyway (Not Recommended)</button>
+        </div>
+    </div>
+    <script src="content.js"></script>
+</body>
+</html>

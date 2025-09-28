@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <img src="icons/icon48.png" alt="PhishGuard AI Icon">
+            <h1>PhishGuard AI</h1>
+        </div>
+        <div class="status">
+            <p>Status: <span id="status-text">Protected</span></p>
+        </div>
+        <div class="actions">
+            <button id="report-btn" class="action-btn report">Report Current Site</button>
+            <button id="allowlist-btn" class="action-btn allow">Add to Allowlist</button>
+        </div>
+        <div id="message-box" class="message-box hidden"></div>
+        <div class="allowlist-section">
+            <h2>Allowlist</h2>
+            <ul id="allowlist-ul"></ul>
+            <div class="input-group">
+                <input type="text" id="allowlist-input" placeholder="example.com">
+                <button id="add-to-allowlist-btn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="popup2.js"></script>
+</body>
+</html>
